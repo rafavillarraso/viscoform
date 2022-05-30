@@ -1,0 +1,29 @@
+@font-face {
+    font-family: robotoLight;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: robotoMedium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: robotoRegular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: ComfortaaRegular;
+    src: url(fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: ComfortaaBold;
+    src: url(fonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: ComfortaaLight;
+    src: url(fonts/Comfortaa-Light.ttf);
+}
