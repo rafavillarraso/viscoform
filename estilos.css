@@ -14,16 +14,68 @@
 }
 
 @font-face {
-    font-family: ComfortaaRegular;
+    font-family: comfortaaRegular;
     src: url(fonts/Comfortaa-Regular.ttf);
 }
 
 @font-face {
-    font-family: ComfortaaBold;
+    font-family: comfortaaBold;
     src: url(fonts/Comfortaa-Bold.ttf);
 }
 
 @font-face {
-    font-family: ComfortaaLight;
+    font-family: comfortaaLight;
     src: url(fonts/Comfortaa-Light.ttf);
+}
+
+.fondo {
+    background-image: url('img/AdobeStock_356516190.jpeg');
+    background-size: cover;
+    min-height: 800px;
+    background-position: center;
+}
+
+.cabecera {
+    padding-top: 17em;
+}
+
+.cabecera h2 {
+    font-size: 3em;
+    font-family: comfortaaRegular;
+    color: white;
+}
+
+.cabecera h4 {
+    font-family: comfortaaRegular;
+    color: black;
+}
+
+.botones {
+    margin-top: 3em;
+}
+
+.botones button {
+    padding: 10px 20px;
+    margin-right: 1em;
+}
+
+.b1 {
+    background-color: #F7F7F7;
+    border-style: none;
+}
+
+.b2 {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.quees {
+    padding-top: 5em;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+.texto .logo{
+    float: right;
 }
