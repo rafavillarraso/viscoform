@@ -59,5 +59,24 @@
                 </div>
             </div>
         </section>
-</body>
+        <section id="formulario">
+            <div class="container">
+            <div class="col-5">
+                <h4>Contacta</h4>
+                <!--Configurar el php.ini del servidor con php con el SMTP con credenciales y puerto-->
+                <form method="post" action="correo.php">
+                <!--Opción si no se puede configurar el php del servidor-->
+                <!--<form action="mailto: info@viscoform.es" method="get">-->
+                    <p>
+                        <span><label for="">Nombre</label><input id="nombre" type="text"></span>
+                        <span><label for="">Email</label><input name="email" id="mail" type="text"></span>
+                    </p>
+                    <p><label for="">Mensaje</label><input name="body" id="mensaje" type="text"></p>
+                    <p><input type="checkbox" required=""> He leido y acepto la política de privacidad</p>
+                    <p><button type="submit">Enviar</button></p>
+                </form>
+            </div>
+            </div>
+        </section>
+</body>''
 </html>

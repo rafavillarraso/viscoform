@@ -106,3 +106,50 @@
 #textocolchon h2 {
     font-family: comfortaaBold;
 }
+
+#formulario {
+    background-color: #F7F7F7;
+    min-height: 400px;
+    padding: 40px 0px;
+    font-family: comfortaaBold;
+}
+
+#formulario .col-5 {
+margin-left: auto;
+margin-right: auto;
+}
+
+#formulario h4 {
+    text-align: center;
+}
+
+#formulario h4 {
+    text-align: center;
+    padding: 2em 0;
+}
+
+#formulario label {
+   margin-right: 1em;
+}
+
+#formulario input {
+    margin-right: 1em;
+    background-color:rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-bottom-color: gray;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+ #formulario button {
+    background-color: #0096C5;
+    border-style: none;
+    padding: 0.5em 1em;
+    color: white;
+    min-width: 8em;
+}
+
+#mensaje {
+    min-width:80%;
+}
