@@ -40,7 +40,7 @@
 }
 
 .cabecera h2 {
-    font-size: 3em;
+    font-size: 4em;
     font-family: comfortaaRegular;
     color: white;
 }
@@ -77,9 +77,60 @@
     min-height: 400px;
 }
 
+.botones2 {
+    margin-top: 3em;;
+}
+
+.botones2 button {
+    padding: 10px 40px;
+    margin-right: 1em;
+
+}
+
+.b3 {
+    background-color: #FC6B01;
+    color: white;
+    border-color: #FC6B01;
+    border-style: solid;
+}
+
+.b4 {
+    background-color: rgba(0, 0, 0, 0);
+    color: gray;
+    border-color: gray;
+    border-style: solid;
+}
+
+.colchon h2 {
+    font-family: comfortaaRegular;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.imagencolchon {
+    width: 100%;
+    float: right;
+    margin-top: -7em;
+}
+
 .colchon {
     min-height: 550px;
     padding: 5em 0px;
+}
+
+.mapa {
+    font-family: comfortaaRegular;
+    min-height: 550px;
+    padding: 2em 0px;
+}
+
+.mapa h2 {
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+.mapa .row {
+    padding-bottom: 0.5em;
 }
 
 .logo img, .logo2 img{
@@ -99,11 +150,11 @@
     font-weight: bold;
 }
 
-.texto2 h4 {
+.texto2 h4, {
     font-family: comfortaaRegular;
 }
 
-#textocolchon h2 {
+#textocolchon {
     font-family: comfortaaBold;
 }
 
@@ -114,7 +165,7 @@
     font-family: comfortaaBold;
 }
 
-#formulario .col-5 {
+#formulario .col-6 {
 margin-left: auto;
 margin-right: auto;
 }
