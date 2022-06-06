@@ -41,6 +41,12 @@ nav {
     align-items: center;
 }
 
+/*.fondobarra {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 90px;
+    position: sticky;
+}*/
+
 nav ul {
     margin-top: 0px;
     text-align: right;
@@ -113,7 +119,8 @@ nav ul li:hover {
 .quees, .imparables {
     padding-top: 5em;
     background-color: #F7F7F7;
-    min-height: 400px;
+    max-height: fit-content;
+    padding-bottom: 2rem;
 }
 
 .botones2 {
@@ -123,7 +130,6 @@ nav ul li:hover {
 .botones2 button {
     padding: 10px 40px;
     margin-right: 1em;
-
 }
 
 .b3 {
@@ -176,11 +182,11 @@ nav ul li:hover {
     padding-bottom: 0.5em;
 }
 
-.logo img, .logo2 img{
+.logo img, .logo2 img {
     max-width: 80%;
 }
 
-.texto .logo{
+.texto .logo {
     float: right;
 }
 
@@ -188,7 +194,7 @@ nav ul li:hover {
     margin-left:6em;
 }
 
-.texto a, .texto2 a{
+.texto a, .texto2 a {
     color:darkcyan;
     font-weight: bold;
 }
@@ -209,8 +215,8 @@ nav ul li:hover {
 }
 
 #formulario .col-10, #formulario .col-sm-6 {
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #formulario h4 {
@@ -245,7 +251,7 @@ margin-right: auto;
 }
 
 #mensaje {
-    min-width:80%;
+    min-width:71%;
 }
 /*footer*/
 footer {
@@ -265,18 +271,21 @@ footer #logofooter {
     margin-right: 1em;
 }
 
-/*Media Queries*/
+/*MEDIA QUERY*/
 
 /*para movil*/
 
-@media (max-width: 621px) {
+@media (max-width: 400px) {
+    .colchon .container #invertir{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+}
+
+@media (max-width: 768px) {
     /*cabecera*/
     .fondo {
         min-height: 700px;
-    }
-
-    nav ul {
-        display: none;
     }
 
     .cabecera {
@@ -297,9 +306,6 @@ footer #logofooter {
     }
 
     /*que es la leucemia*/
-    .quees {
-        min-height: 800px;
-    }
 
     .quees img {
         text-align: center;
@@ -320,19 +326,6 @@ footer #logofooter {
         font-size: 2em;
     }
 
-    .colchon .container #invertir{
-        display: flex;
-        flex-flow: column-reverse;
-    }
-
-    .imagencolchon {
-        margin-top: 0em;
-    }
-
-    .b3, .b4 {
-        width: 300px;
-        margin-bottom: 1em;
-    }
 
     /*sección imparables*/
     .texto2, .logo2 {
@@ -381,5 +374,36 @@ footer #logofooter {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
+}
+
+/*para iPad*/
+
+@media only screen and (min-width: 768px) {
+    .texto, .quees img {
+        margin-left:2em;
+    }
+}
+
+@media (max-width: 1436px) {
+
+    nav ul {
+        display: none;
+    }
     
+    /*que es la leucemia*/
+    .quees img {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    /*descanso solidario*/
+    .imagencolchon {
+        margin-top: 0em;
+    }
+
+    .b3, .b4 {
+        width: 300px;
+        margin-bottom: 1em;
+    }
+
 }
