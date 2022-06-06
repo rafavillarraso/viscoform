@@ -28,32 +28,6 @@
     src: url(fonts/Comfortaa-Light.ttf);
 }
 
-/*boton arriba*/
-#myBtn {
-    border-radius: 15px;
-    padding-bottom: 4px;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-shadow: 0px 05px 5px rgba(0,0,0,.5);
-    background-color: darkorange;
-    border: 0px;
-    display: none; 
-    position: fixed; 
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 50px; /* Place the button 30px from the right */
-    z-index: 99; 
-    cursor: pointer; /* Add a mouse pointer on hover */
-}
-
-#myBtn:hover {
-    background-color: grey;
-}
-
-#topflecha {
-    width: 30px
-}
-/*boton arriba*/
-
 .fondo {
     background-image: url('img/AdobeStock_356516190.jpeg');
     background-size: cover;
@@ -234,7 +208,7 @@ nav ul li:hover {
     font-family: comfortaaBold;
 }
 
-#formulario .col-6 {
+#formulario .col-10, #formulario .col-sm-6 {
 margin-left: auto;
 margin-right: auto;
 }
@@ -289,4 +263,123 @@ footer #logofooter {
 .rrssimg {
     width: 25px;
     margin-right: 1em;
+}
+
+/*Media Queries*/
+
+/*para movil*/
+
+@media (max-width: 621px) {
+    /*cabecera*/
+    .fondo {
+        min-height: 700px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .cabecera {
+        padding-top: 8em;
+    }
+
+    .cabecera, .botones, nav img {
+        padding-left: 2em;
+    }
+
+    .cabecera h2 {
+        font-size: 3em;
+    }
+
+    .b1, .b2 {
+        width: 300px;
+        margin-bottom: 1em;
+    }
+
+    /*que es la leucemia*/
+    .quees {
+        min-height: 800px;
+    }
+
+    .quees img {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .texto, .quees img{
+        margin-left:2em;
+    }
+
+    /*sección descanso solidario*/
+    .colchon {
+        margin-left: 2em;
+        padding: 2em 0px;
+    }
+
+    .colchon h2 {
+        font-size: 2em;
+    }
+
+    .colchon .container #invertir{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .imagencolchon {
+        margin-top: 0em;
+    }
+
+    .b3, .b4 {
+        width: 300px;
+        margin-bottom: 1em;
+    }
+
+    /*sección imparables*/
+    .texto2, .logo2 {
+        margin-left:2em;
+        padding-bottom: 2em;
+    }
+
+    .imparables {
+        padding-top: 3em;
+    }
+
+    /*sección mapa*/
+    .mapa {
+        margin-left: 2em;
+    }
+
+    /*sección form*/
+    #nombre, #mail, #mensaje {
+        width: 100%;
+    }
+
+    #nombre {
+        margin-bottom: 1em;
+    }
+
+    /*sección footer*/
+    .rrss {
+        text-align: right;
+    }
+
+    .rrssimg {
+        width: 20px;
+        margin-right: 1em;
+    }
+
+    footer #logofooter {
+        width: 9em;
+        margin-left: 2em;
+    }
+
+    /*cancelar scroll horizontal*/
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
 }
