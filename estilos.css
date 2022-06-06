@@ -28,6 +28,32 @@
     src: url(fonts/Comfortaa-Light.ttf);
 }
 
+/*boton arriba*/
+#myBtn {
+    border-radius: 15px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 05px 5px rgba(0,0,0,.5);
+    background-color: darkorange;
+    border: 0px;
+    display: none; 
+    position: fixed; 
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 50px; /* Place the button 30px from the right */
+    z-index: 99; 
+    cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+#myBtn:hover {
+    background-color: grey;
+}
+
+#topflecha {
+    width: 30px
+}
+/*boton arriba*/
+
 .fondo {
     background-image: url('img/AdobeStock_356516190.jpeg');
     background-size: cover;
@@ -35,8 +61,47 @@
     background-position: center;
 }
 
+nav {
+    display: flex;
+    height: 90px;
+    align-items: center;
+}
+
+nav ul {
+    margin-top: 0px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-family: comfortaaRegular;
+    list-style: none;
+    display: inline-block;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color:white;
+}
+
+nav ul li:hover {
+    border-bottom-color: #FC6B01;
+    border-bottom-style: solid;
+}
+
+.site-logo {
+    width: 200px;
+}
+
 .cabecera {
-    padding-top: 17em;
+    padding-top: 12em;
 }
 
 .cabecera h2 {
@@ -102,7 +167,6 @@
 }
 
 .colchon h2 {
-    font-family: comfortaaRegular;
     margin-bottom: 1em;
     font-size: 3em;
 }
@@ -114,8 +178,14 @@
 }
 
 .colchon {
+    font-family: comfortaaRegular;
     min-height: 550px;
     padding: 5em 0px;
+}
+
+.colchon p {
+    color: gray;
+    letter-spacing: 0.1em;
 }
 
 .mapa {
@@ -203,7 +273,7 @@ margin-right: auto;
 #mensaje {
     min-width:80%;
 }
-
+/*footer*/
 footer {
     background-color: #0096C5;
 }
@@ -216,3 +286,7 @@ footer #logofooter {
     width: 11em;
 }
 
+.rrssimg {
+    width: 25px;
+    margin-right: 1em;
+}

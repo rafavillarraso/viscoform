@@ -8,11 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="main.js"></script>
     <title>Descanso solidario</title>
+    <link rel="icon" type="image/x-icon" href="img/dsfavicon.ico">
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="img/fundJosepCarreras.png" id="topflecha"></button>
         <div class="fondo">
         <header class="container">
-            <div texto class="col-6 cabecera">
+            <div class="row">
+                <nav>
+                    <div class="col-5"><img class="site-logo" src="img/logo nuevo completo (sin frase) 2017.png" alt="viscoform_logo"></div>
+                    <div class="col-7">
+                        <ul>
+                            <li><a href="#quees">Qué es la leucemia</a></li>
+                            <li><a href="#descanso">Colchón Solidario</a></li>
+                            <li><a href="#imparables">Empresa Imparable</a></li>
+                            <li><a href="">Puntos de venta</a></li>
+                        </ul>
+                    </div>
+                </nav>
+             </div>
+            <div texto class="col-6 cabecera col-md-8 col-sm-12">
                 <h2>Imparables contra la leucemia</h2>
                 <h4>Campaña colaborativa a beneficio de la Fundación Josep Carreras</h4>
             </div>
@@ -26,7 +41,7 @@
             <div class="container">
                 <div class="row">
                     <div class="logo col-4"><img src="img/fundJosepCarreras.png" alt=""></div>
-                    <div class="texto col-6"><h4>¿Qué es la leucemia?</h4>
+                    <div id="quees"class="texto col-6"><h4>¿Qué es la leucemia?</h4>
                         <p>Bajo la denominación cáncer se incluyen un conjunto de enfermedades caracterizadas por una producción anómala de un determinado tipo celular del organismo. Estas células tienen una velocidad de crecimiento y división más allá de los límites normales, por lo que progresivamente van invadiendo el organismo.</p>
                         <p>La leucemia consiste en la proliferación incontrolada de una población anómala de células de la sangre. Estas células anómalas infiltran la médula ósea, impidiendo la producción de las restantes células normales e invaden la sangre y otros órganos.</p>
                         <p><a href="https://www.fcarreras.org/es/que-es-la-leucemia_1585" target="blank">+Info</a></p>
@@ -37,7 +52,7 @@
         <section class="colchon">
             <div class="container">
                 <div class="row">
-                    <h2><span style="color:#0096C5;">DESCANSO </span><span style="color:#E85317">SOLIDARIO</span></h2>
+                    <h2><span id="descanso" style="color:#0096C5;">DESCANSO </span><span style="color:#E85317">SOLIDARIO</span></h2>
                 </div>
                 <div class="row">
                     <div id="textocolchon" class="col-4">
@@ -52,12 +67,16 @@
                         <img class="imagencolchon" src="img/newwynn2.png" alt="colchón solidario">
                     </div>
                 </div>
+                <div class="row">
+                    <p> <strong style="color:black">Aportación por cada colchón:</strong> <span class="textopeq">Colchón de 90cm = 16€ | Colchón de 135cm = 22€ | Colchón de 150cm = 25€</span></p>
+                    <p><small>(Para otras medidas consultar)</small></p>
+                </div>
                 <div class="row" id="aportaciones">
 
                 </div>
             </div>
         </section>
-        <section class="imparables">
+        <section id="imparables"class="imparables">
             <div class="container">
                 <div class="row">
                     <div class="logo2 col-6"><img src="img/imparables.png" alt="fundación Josep Carreras logo Imparables"></div>
@@ -182,15 +201,12 @@
                         <img src="img/logo nuevo completo (sin frase) 2017.png" alt="viscoform" id="logofooter">
                     </div>
                     <div class="col-3">
-
+                        <a href="https://www.facebook.com/viscoform.es" target="blank" ><img class="rrssimg" src="img/rrss-09.png" alt="facebook"></a> 
+                        <a href="https://www.instagram.com/viscoform/" target="blank"> <img class="rrssimg" src="img/rrss-10.png" alt="instagram"></a>
+                        <a href="https://twitter.com/viscoform" target="blank"></a> <img class="rrssimg" src="img/rrss-11.png" alt="twitter">
                     </div>
                  </div>
             </div>
-        </footer>
-        <!-- script para google maps -->
-        <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
-        defer
-      ></script>     
+        </footer>    
 </body>
 </html>
