@@ -2,11 +2,11 @@
     $nombre = $_POST['nombre'];
     $mail = $_POST['mail'];
     $asunto = 'Formulario Descanso Solidario';
-    $mensaje = "Nombre: ".$nombre."<br> Email: ".$mail."<br> Mensaje: ".$_POST['mensaje'];
+    $mensaje = "Nombre: ".$nombre."Email: ".$mail."Mensaje: ".$_POST['mensaje'];
 
-    if (mail('rafa@pilafestudio.com', $asunto, $mensaje)) {
+    if (mail('info@viscoform.es', $asunto, $mensaje)) {
         echo "correo enviado correctamente";
     }else{
-        echo "Merda pa tu";
+        echo "No se ha podido enviar el correo";
     }
     ?>
