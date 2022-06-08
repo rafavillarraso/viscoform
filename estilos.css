@@ -253,6 +253,14 @@ nav ul li:hover {
 #mensaje {
     min-width:71%;
 }
+
+/*botones puntos de venta*/
+#puntosdeventa button {
+    font-size: smaller;
+    background-color: white;
+    border-radius: 100px;
+}
+
 /*footer*/
 footer {
     background-color: #0096C5;
